@@ -17,3 +17,8 @@ Converts certificate format to a desired format.
       - PKCS7 to PEM
   
   #### * Adding web app functionality
+      React web app that allows the user to:
+          - select a certificate file.
+          - select a format conversion (e.g: PEM to P7B, PFX to PEM).
+          - Initiate certificate format conversion.
+          - Allows the user to download the certifcate in the new format.
