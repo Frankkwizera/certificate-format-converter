@@ -1,0 +1,11 @@
+# Author: Frank Kwizera
+
+# Ignore all certificate.
+*.pem
+*.der
+*.key
+*.crt
+*.cer
+*.p7b
+*.pfx
+*.pk8
