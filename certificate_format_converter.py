@@ -12,6 +12,12 @@ class CertificateFormatConverter:
 
     @staticmethod
     def convert_certificate_format(certificate_file_path: str, desired_format: str):
+        """
+        Converts the certificate format.
+        Inputs:
+            - certificate_file_path: Path to the certificate file.
+            - desired_format: Desired certificate format.
+        """
         certificate_name: str = certificate_file_path.split(".")[0]
         new_certificate_name: str = certificate_name + ".{0}".format(desired_format)
 
@@ -31,6 +37,13 @@ class CertificateFormatConverter:
     
     @staticmethod
     def is_desired_format_valid(desired_format: str):
+        """
+        Checks if the desired certificate format is currently supported.
+        Inputs:
+            - desired_format: Desired certificate format.
+        Returns:
+            - True if it is supported, otherwise false.
+        """
         return any(member for member in SupportedCertificateFormats if member.name.lower() == desired_format)
 
 @unique
